@@ -36,12 +36,13 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="imggallery.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="css/imggallery.css"> -->
 
-    <style>
+    <!-- <style>
       body {
         display: flex;
         justify-content: center;
@@ -61,12 +62,12 @@
         color: black;
       }
 
-      /* @media only screen and (min-width: 768px) {
+     @media only screen and (min-width: 768px) {
         .alb {
           width: 33.33%;
         }
-      } */
-    </style>
+      } 
+    </style> -->
   </head>
 
   <body>
@@ -94,7 +95,7 @@
           <a href="index.html" class="nav-item nav-link ">Home</a>
           <a href="blog.html" class="nav-item nav-link">Blogs</a>
           <a href="feature.html" class="nav-item nav-link">Courses</a>
-          <a href="imggallery.php" class="nav-item nav-link active">Images</a>
+          <a href="imggallery.html" class="nav-item nav-link active">Images</a>
 
           <div class="nav-item dropdown">
             <a
@@ -129,41 +130,44 @@
       </div>
     </nav>
 
-    <!-- <div class="alb">
-      <img src="uploads/<?=$images['image_url']?>" />
-    </div> -->
+  
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center align-items-center">
-            <h1 style="color: black; text-align: center">photo gallery</h1>
-            <a href="upload.php">&#8592;</a>
-          </div>
-        </div>
+    <div class="container1">
+      <div class="heading">
+        <h3>Photo <span>Gallery</span></h3>
       </div>
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        <?php
-         $sql = "SELECT * FROM images ORDER BY image_url DESC";
-         $res = mysqli_query($connection,  $sql);
+      <div class="box">
+        <div class="dream1">
+          <img src="./imgGallery/14.jpg" alt="" />
+          <img src="./imgGallery/2.jpg" alt="" />
+          <img src="./imgGallery/4.jpg" alt="" />
+          <img src="./imgGallery/1.jpg" alt="" />
+          <img src="./imgGallery/7.jpg" alt="" />
           
-          if ($res) {
-              if (mysqli_num_rows($res) >
-        0) { while ($images = mysqli_fetch_assoc($res)) { ?>
-        <div class="col col-md-4">
-          <div class="alb" >
-            <img src="uploads/<?=$images['image_url']?>" />
-          </div>
+          
+          
+          
         </div>
-        <?php
-                }
-            } else {
-                echo "No images found.";
-            }
-        } else {
-            echo "Error: " . mysqli_error($connection);
-        }
-    ?>
+        <div class="dream2">
+          <img src="./imgGallery/7.jpg" alt="" />
+          <img src="./imgGallery/6.jpg" alt="" />
+          <img src="./imgGallery/8.jpg" alt="" />
+          <img src="./imgGallery/9.jpg" alt="" />
+          
+          
+          </div>
+          <div class="dream3">
+            <img src="./imgGallery/3.jpg" alt="" />
+            <img src="./uploads/12.jpg" alt="" />
+            <img src="./uploads/13.jpg" alt="" />
+            <img src="./imgGallery/11.jpg" alt="" />
+            <img src="./imgGallery/5.jpg" alt="" />
+            <img src="./imgGallery/10.jpg" alt="" />
+            
+
+            
+            
+          </div>
       </div>
     </div>
 

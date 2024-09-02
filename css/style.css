@@ -461,7 +461,7 @@ html, body {
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/maybecarousal.jpg);
-    background-position: center center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px 0 180px 0;
