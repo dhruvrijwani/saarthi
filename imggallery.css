@@ -87,16 +87,29 @@
 }
 
 @media only screen and (max-width: 769px) {
-  .container1 .box {
-    flex-direction: column;
-  }
-
+  
   .container1 .box .dream {
     width: 100%;
   }
 }
 
 @media only screen and (max-width: 643px) {
+
+   .container1 .box {
+        flex-direction: column;
+      }
+
+    .container1 .box .dream1 {
+        width: 100%;
+    }
+    
+    .container1 .box .dream2 {
+        width: 100%;
+    } 
+
+    .container1 .box .dream3 {
+        width: 100%;
+    }
 
     .container1 .heading {
         width: 100%;
